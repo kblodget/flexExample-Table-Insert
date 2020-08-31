@@ -118,15 +118,18 @@ function App() {
   const data = React.useMemo(() => makeData(20), []);
   const [showPanel, setShowPanel] = useState(false);
 
-  return (
+ return (
     <div>
       <button onClick={() => setShowPanel(!showPanel)}>Toggle Panel</button>
-      <div className="table-wrapper">
-        <Styles>
-          <Table columns={columns} data={data} />
-        </Styles>
-
-        {showPanel && <Panel />}
+      <div className="page-wrapper">
+        <div className="details-view">
+          <div className="table-wrapper">
+            <Styles>
+              <Table columns={columns} data={data} />
+            </Styles>
+          </div>
+          {showPanel && <Panel />}
+        </div>
       </div>
     </div>
   );
