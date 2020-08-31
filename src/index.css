@@ -11,20 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.table-wrapper {
+
+.page-wrapper {
   display: flex;
-  flex: 1;
-  left: 0;
-  right: 0;
-  top: 144px;
-  bottom: 43px;
-  min-width: 550px;
+  flex: 1 1 0%;
+  position: unset;
 }
 .details-view {
   display: flex;
   flex: 1 1 0%;
-    position: unset;
 }
+.table-wrapper {
+  display: flex;
+  /*flex: 1; */
+  left: 0;
+  right: 0;
+  top: 144px;
+  bottom: 43px;
+  /*min-width: 550px;*/
+  position:absolute;
+}
+
 
 #panel-container {
   border: 2px black solid;
