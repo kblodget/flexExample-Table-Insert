@@ -18,12 +18,12 @@ code {
   right: 0;
   top: 144px;
   bottom: 43px;
-  position: unset;
   min-width: 550px;
 }
 .details-view {
   display: flex;
   flex: 1 1 0%;
+    position: unset;
 }
 
 #panel-container {
