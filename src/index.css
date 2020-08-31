@@ -11,15 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .table-wrapper {
   display: flex;
+  flex: 1;
   left: 0;
   right: 0;
   top: 144px;
   bottom: 43px;
-  position: absolute;
+  position: unset;
   min-width: 550px;
+}
+.details-view {
+  display: flex;
+  flex: 1 1 0%;
 }
 
 #panel-container {
@@ -31,11 +35,4 @@ code {
   bottom: 43px;
   overflow-y: scroll;
   height: 200px;
-}
-.panel-content {
-  flex: 0 0 auto;
-  flex-direction: column;
-  padding: 10px;
-  background-color: pink;
-  border: 1px solid black;
 }
